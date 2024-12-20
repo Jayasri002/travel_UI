@@ -1,0 +1,321 @@
+/* main screen */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #3fa9f5, #1a2b67);
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 600;
+}
+
+.icon {
+    width: 40px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 10px;
+}
+
+/* ======== Home Page =======*/
+
+
+.header {
+    padding: 20px;
+    background-color: white;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.greeting h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.greeting span {
+    font-size: 1.5rem;
+}
+
+.greeting p {
+    font-size: 1rem;
+    color: gray;
+}
+
+.profile-pic img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.search-bar {
+    display: flex;
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    background: none;
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.search-bar .filter-button {
+    background-color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.filter-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.categories button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    font-size: 1rem;
+}
+
+.categories .active {
+    background-color: black;
+    color: white;
+}
+
+.places {
+    display: flex;
+    overflow-x: auto;
+    padding: 0 20px;
+    gap: 15px;
+}
+
+.place-card {
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    width: 160px;
+}
+
+.place-card img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.favorite-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.place-name {
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.more-places {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.more-places p {
+    font-size: 1.2rem;
+}
+
+.view-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+}
+
+.nav-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+/* ===== final page ==== */
+
+
+
+.details-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-section {
+    position: relative;
+}
+
+.place-img {
+    width: 100%;
+    height: auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.back-btn, .bookmark-btn {
+    position: absolute;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    top: 10px;
+    font-size: 1.2rem;
+}
+
+.back-btn {
+    left: 10px;
+}
+
+.bookmark-btn {
+    right: 10px;
+}
+
+.place-info {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.place-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.place-price {
+    font-size: 1rem;
+}
+
+.place-location {
+    font-size: 0.9rem;
+}
+
+.content-section {
+    padding: 20px;
+}
+
+.tab-header {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab {
+    font-size: 1.1rem;
+    color: gray;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tab.active {
+    font-weight: bold;
+    color: black;
+}
+
+.overview {
+    padding: 10px 0;
+}
+
+.overview-icons {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1rem;
+    color: gray;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.book-btn {
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+}
